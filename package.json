@@ -1,0 +1,19 @@
+{
+  "name": "ebook_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "sass:watch": "sass assets/scss/styles.scss:assets/css/styles.css --watch",
+  "sass:build": "sass assets/scss/styles.scss:assets/css/styles.css --style=compressed",
+  "build": "npm run sass:build"
+   
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.93.2"
+  }
+}

@@ -1,0 +1,35 @@
+/* @import '../../node_modules/bootstrap/scss/functions'; 
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap/scss/variables';
+ */
+//fonts
+$font-family-sans-serif: 'Open Sans', sans-serif;
+//colors
+$primary: #c167ef;
+$secondary: #10bcee;
+$dark: #2b3041;
+$light: #f3f6f9;
+
+//navbar
+ 
+$navbar-dark-color: #fff; // Color base para enlaces de nav oscuro (el que quieres que sea celeste)
+$navbar-dark-hover-color: $secondary ; 
+
+ @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.navbar{
+  transition: all .5s ease-in-out;
+}
+
+.navbar-sticky, .navbar-collapse.show {
+  opacity: .9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+
+.header{
+  background: url('../images/header-background.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+
