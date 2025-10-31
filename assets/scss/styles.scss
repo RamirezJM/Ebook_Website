@@ -1,7 +1,4 @@
-/* @import '../../node_modules/bootstrap/scss/functions'; 
-@import '../../node_modules/bootstrap/scss/mixins';
-@import '../../node_modules/bootstrap/scss/variables';
- */
+
 //fonts
 $font-family-sans-serif: 'Open Sans', sans-serif;
 //colors
@@ -12,7 +9,7 @@ $light: #f3f6f9;
 
 //navbar
  
-$navbar-dark-color: #fff; // Color base para enlaces de nav oscuro (el que quieres que sea celeste)
+$navbar-dark-color: #fff;
 $navbar-dark-hover-color: $secondary ; 
 
  @import '../../node_modules/bootstrap/scss/bootstrap.scss';
@@ -21,7 +18,7 @@ $navbar-dark-hover-color: $secondary ;
   transition: all .5s ease-in-out;
 }
 
-.navbar-sticky, .navbar-collapse.show {
+.navbar-sticky{
   opacity: .9;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
@@ -32,4 +29,15 @@ $navbar-dark-hover-color: $secondary ;
   background-size: cover;
 }
 
+.download{
+  background: url('../images/header-background.jpg') center center no-repeat;
+  background-size: cover;
+}
 
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 400px;
+  width: 100%;
+  border: none;
+}

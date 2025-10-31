@@ -1,16 +1,16 @@
 {
   "name": "ebook_project",
   "version": "1.0.0",
+  "type":"module",
   "main": "index.js",
   "scripts": {
-  "sass:watch": "sass assets/scss/styles.scss:assets/css/styles.css --watch",
-  "sass:build": "sass assets/scss/styles.scss:assets/css/styles.css --style=compressed",
-  "build": "npm run sass:build"
-   
+    "watch:css": "sass assets/scss/styles.scss assets/css/styles.css --watch --quiet-deps",
+    "build:css": "postcss assets/css/styles.css --output assets/css/styles.css --no-map",
+    "purge": "postcss assets/css/styles.css --use @fullhuman/postcss-purgecss --output assets/css/styles.css --no-map"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "RamirezJM",
+  "license": "MIT",
   "description": "",
   "dependencies": {
     "bootstrap": "^5.3.8",
